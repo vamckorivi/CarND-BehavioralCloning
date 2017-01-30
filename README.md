@@ -68,6 +68,10 @@ Batch Size of 256 is used in the final model. Different batch sizes were used wh
 ### Tracks Run
 Model was run both Track 1 and Track 2 successfully. Though, there was no brightness augmentation was not applied during training, model performed very well on Track 2 which was acutally quite suprising!
 
+Track Run Video:
+
+[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/l6P1NvL_8kY/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=7YqVN_j4ISwBDBdJ9jA3i5U9LCQ)](https://youtu.be/l6P1NvL_8kY)
+
 ### Take away from the project
 
 1. The importance of training data. In P2, the training data was reasonably enough and applying little augmentations like the tilting images to get different angles was sufficient. In this project, we had to eliminate the zero angle which was causing overfitting, remove the left bias. This was a huge learning curve on P3 regarding how really important is training data. I tried for a week to figure out with just Udacity data but it was not enough for the model to work. Recovery data was so useful along with the little augmentations made.
