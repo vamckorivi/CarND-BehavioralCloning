@@ -23,9 +23,17 @@ This project requires **Python 3.5** and the following Python libraries installe
 
 For the initial few runs, I have used Udacity Data and the model was not performing upto the mark. Later on, Annie Flipp(classmate) has provided me the recovery data she collected. Training the model using both the Udacity Data and Annie's Data has improved the model performance a lot and the model works on both the tracks 1 and 2.
 
+Here is the screen-shot of the data set used:
+
+![alt tag] (https://github.com/vamckorivi/CarND-BehavioralCloning/blob/master/images/car_images.png)
+
 ###Preprocessing
 
 To understand the data, we have plotted the histogram of the angles and clearly indicates that the data with 0 angles is huge and it has a left turn bias. There are 3 camera angles provided to us - Center, Left, Right and the corresponding images and the angle corresponding to the image.
+
+Below is the plot of the steering angles and it clearly shows the training data has relatively high zero angles which is not a balanced training set.
+
+![alt tag] (https://github.com/vamckorivi/CarND-BehavioralCloning/blob/master/images/P3B_hist.png)
 
 While testing on the track, our prediction was not so accurate in the initial iterations and the car was going out of the track very easily. For the initial iteration, we have tested with only Udacity Data and the results were really poor.
 
@@ -45,6 +53,8 @@ As part of the preprocessing step, I have followed Annie's method of removing al
 ### Training
 
 Keras lab model was used for the initial runs. After lot of trial and error with that model, switched to the most popular model NVIDIA. Below is the architecture of the NVIDIA model used. 
+
+![alt tag] (https://github.com/vamckorivi/CarND-BehavioralCloning/blob/master/images/nvidia_architecture.png)
 
 Lambda Normalization which helped to increase the speed of training.
 
