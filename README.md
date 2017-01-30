@@ -78,7 +78,8 @@ Track Run Video:
 2. Resizing of the images has saved lot of time when training. When NVIDIA size of 66,208 was used, each epoch was taking around 200 seconds on AWS, but when switched to 64,64, it took on an average 60 seconds per each epoch.
 3. I had to stick with NVIDA model after couple of days tweaking my own model to make the submission on time. Played around with comma.ai model too but for P3, we used Nvidia, but in real time we had to figure out our own training model. In future, I would like to come up with my own tiny model which could be good enough.
 4. I had to spend nearly a week to figure out why the model was predicting constant angle. I reached out to classmates on slack and my mentor for resolution. With the comments received from them, I tried various things of upsampling, downsampling, trying different models. But finally, I figured out it was due to the normalization errors I made. It was a very small thing but took a lot of time to figure out. Debugging in Machine Learing is really hard!
-
+5. Running with lowest screen resolution(640*480) and fastest Graphics Quality helped to perform the model better.
+ 
 
 
 
